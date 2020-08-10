@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Karuna</string>
+    <string name="title_home">ရှာဖွေမှု</string>
+    <string name="title_dashboard">မှတ်တမ်း</string>
+    <string name="title_notifications">ထိန်းချုပ်မှု</string>
+    
+    <string name="str1">ဂရုဏာ</string>
+    <string name="str2">KARUNA MAUBIN , BLOOD DONATION</string>
+    <string name="name">အမည်</string>
+    <string name="amount">သွေးပမာဏ</string>
+    <string name="phone">ဖုန်းနံပါတ်</string>
+    <string name="address">နေရပ်လိပ်စာ</string>
+    <string name="nrc">မှတ်ပုံတင်နံပါတ်</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save_data">အချက်အလက်များသိမ်းမည်</string>
+    <string name="blood">သွေးအမျိုးအစား</string>
+    <string name="last_date">နောက်ဆုံးသွေးလှူခဲ့သောရက်</string>
+    <string name="gender">Gender</string>
+    <string name="call">Call</string>
+    <string name="all">အားလုံး</string>
+    <string name="group">အုပ်စု</string>
+</resources>

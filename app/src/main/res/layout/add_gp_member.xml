@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.addGpmember">
+
+    <TextView
+        android:id="@+id/add_mtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karuna Group"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/gpm_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add_mtv"
+        android:contentDescription="@string/app_name" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/gpm_profile">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gpm_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="အမည်"
+                android:background="#ffffff"
+                android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gpm_blood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="သွေးအမျိုးအစား"
+                android:background="#ffffff"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gpm_amt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="သွေးပမာဏ"
+                android:background="#ffffff"
+                android:maxLines="3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gpm_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="ဖုန်းနံပါတ်"
+                android:background="#ffffff"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gpm_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:hint="နေရပ်လိပ်စာ"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gpm_nrc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:hint="မှတ်ပုံတင်နံပါတ်"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/m_rdo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/m_rdo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+            <RadioButton
+                android:id="@+id/m_rdo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/gpm_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="အချက်အလက်များသိမ်းမည်"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/gpm_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ပြီးပြီ"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"/>
+            <Button
+                android:id="@+id/gpm_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="နောက်တစ်ယောက်"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

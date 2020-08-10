@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.addGroup"
+    android:background="#FAFCFF">
+
+    <ImageView
+        android:id="@+id/ag_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/gdll"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gdname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="အဖွဲ့အမည်"
+                android:background="#ffffff"
+                android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gdphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="အဖွဲ့ဖုန်းနံပါတ်"
+                android:background="#ffffff"
+                android:maxLines="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gdaddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="အဖွဲ့လိပ်စာ"
+                android:background="#ffffff"
+                android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/app_name" />
+            <EditText
+                android:id="@+id/gdm_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="အဖွဲ့၀င်အရေအတွက်"
+                android:background="#ffffff"
+                android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="အဖွဲ့၀င်များထည့်သွင်းမည်"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
